@@ -3,30 +3,32 @@
 }
 
 .App-logo {
+  animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
 .App-header {
+  background-color: rgb(211, 193, 193);
+  height: 150px;
+  padding: 20px;
+  color: white;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.App-title {
+  font-size: 1.5em;
 }
 
-@keyframes App-logo-float {
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
   0% {
     transform: translateY(0);
   }
@@ -36,4 +38,53 @@
   100% {
     transform: translateY(0px)
   }
+}
+
+.leftsection{
+  width: 30%;
+  float: left;
+  text-align: left;
+}
+
+button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.rightsection{
+  width: 70%;
+}
+
+table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+}
+
+input{
+  width: 50%;
+  margin-bottom: 10px;
 }
